@@ -1,0 +1,325 @@
+/* 
+font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif;
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* 
+  - We want 1 rem to be 10px
+  - But, 1 rem = 16px
+  - For 10px, we have 10px/ 16px = 0.625 
+  - Now, 1 rem = 10px if font-size = 62.5% 
+  */
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+  color: #fff;
+  line-height: 1;
+
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Lora", serif;
+  /* font-weight: 400; */
+  height: 100vh;
+}
+
+main {
+  background: linear-gradient(#141b29, #0c111b);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding-bottom: 1.6rem;
+}
+
+h1 {
+  font-size: 5.2rem;
+  letter-spacing: 2.2px;
+  /* line-height: 5rem; */
+}
+
+h2 {
+  font-size: 4.4rem;
+  padding-top: 1.4rem;
+  letter-spacing: 1px;
+}
+h3 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  padding-top: 4.8rem;
+  padding-left: 5px;
+}
+h4 {
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  padding-bottom: 3.2rem;
+}
+/*****************/
+/* REUSABLE CODE */
+/****************/
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+/*****************/
+/* HEADER */
+/****************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 2.4rem 4.8rem 0 4.8rem;
+  background-color: #141b29;
+}
+
+.logo {
+  height: 6rem;
+}
+.main-nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7.2rem;
+  /* width: 40rem; */
+  /* background-color: yellowgreen; */
+  list-style: none;
+}
+
+.header-icon {
+  font-size: 3.6rem;
+}
+.main-nav-link-1:link,
+.main-nav-link-1:visited,
+.main-nav-link-2:link,
+.main-nav-link-2:visited,
+.main-nav-link-3:link,
+.main-nav-link-3:visited {
+  color: #415784;
+  transition: all 0.2s;
+}
+.main-nav-link-1:hover {
+  color: #1da1f2;
+}
+.main-nav-link-2:hover {
+  color: #ee82ee;
+}
+.main-nav-link-3:hover {
+  color: #0072b1;
+}
+/*****************/
+/* HERO SECTION */
+/****************/
+.section-hero {
+  padding: 6.4rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
+}
+
+.hero-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-img-box::before {
+  content: "";
+  display: block;
+  width: 75%;
+  padding-bottom: 75%;
+  /* background-color: #1f2a40; */
+  /* background: linear-gradient(#43cea2, #185a94); */
+  /* background: radial-gradient(#2980b9, #2c3e50); */
+  background: radial-gradient(#000046, #1cb5e0);
+  position: absolute;
+  border-radius: 50%;
+  z-index: 2;
+  top: 22%;
+}
+.hero-img-box::after {
+  content: "";
+  display: block;
+  width: 55%;
+  padding-bottom: 55%;
+  background-color: #25324b;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 3;
+  top: 32%;
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+.hero-img {
+  width: 100%;
+  z-index: 4;
+}
+#text-1 {
+  background: linear-gradient(to right, #78ffd6 0%, #007991 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#text-2 {
+  background: linear-gradient(to right, #34e89e 0%, #96c93d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#text-3 {
+  background: linear-gradient(to right, #43c6ac 0%, #f8ffae 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bio {
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  margin-bottom: 6.4rem;
+  margin-top: 4.8rem;
+}
+
+.btn-1:link,
+.btn-1:visited {
+  /* Since btns are inline elements, so if we want properties like padding to work normally, we need to set them to inline-block. So that box-model applies as ususal  */
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  background-color: #fff;
+  color: #090c12;
+  border: 4px solid #1a2334;
+  border-radius: 9px;
+  font-size: 2rem;
+  text-decoration: none;
+  letter-spacing: 1.6px;
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+}
+
+.btn-1::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #090c12;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms ease-in-out;
+}
+
+.btn-1:hover::before,
+.btn-1:focus::before {
+  transform: scaleX(1);
+  color: aquamarine;
+}
+.btn-1:hover,
+.btn-1:focus {
+  color: #fff;
+}
+
+/*****************/
+/* SKILLS SECTION */
+/****************/
+.skills {
+  padding: 9.6rem 0;
+}
+.subheading {
+  border-bottom: 2px solid #11998e;
+  padding-bottom: 2px;
+}
+.subheading-icon {
+  font-size: 3.5rem;
+  color: #38ef7d;
+  padding-right: 10rem;
+}
+
+.skill-tags {
+  margin: 1.2rem 0 0 0;
+  border-bottom: 1px solid #38ef7d;
+  padding: 0 2px 3.6rem 2px;
+}
+.tag {
+  display: inline-block;
+  /* width: 8rem; */
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  /* text-transform: uppercase; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  border-radius: 100px;
+  background-color: #11998e;
+  margin-right: 2rem;
+}
+
+/*****************/
+/* FOOTER */
+/****************/
+
+.footer {
+  padding: 9.6rem 0;
+  background-color: #0b0f17;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1.2px;
+  /* line-height: 2rem; */
+}
+.footer-flex {
+  display: flex;
+  gap: 1.4rem;
+  padding-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+.footer-flex a {
+  padding-top: 0.3rem;
+}
+.footer-text {
+  font-size: 1.2rem;
+}
+.footer-text a {
+  color: #73a9ad;
+  font-weight: 600;
+}
+.footer-logo-span {
+  color: #ee82ee;
+}
+.footer-links {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-icon {
+  font-size: 2rem;
+  color: #73a9ad;
+}

@@ -1,0 +1,15 @@
+--Signature font
+'wiretap' gradient
+
+--background color
+top-to-bottom #141B29 #0C111B
+
+--font gradients
+radial 'chitty chitty bang bang' #007991 #78ffd6
+radial 'Ibiza sunset' #ee0979 #ff6a00
+linear #F9D423 #FF4E50
+
+--button color
+#02203c;
+
+
