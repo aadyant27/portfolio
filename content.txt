@@ -1,3 +1,5 @@
+Portfolio website designed & developed by Aadyant Srivastava, showcasing his technical skill along with social-media handles and resume(downloadable).
+
 --Signature font
 'wiretap' gradient
 
