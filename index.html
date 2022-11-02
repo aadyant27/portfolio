@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -48,7 +49,9 @@
           <div class="hero-text-box">
             <h1 id="text-1">Designer</h1>
             <h1 id="text-2">Developer</h1>
-            <h1 id="text-3">Computer Scientist</h1>
+            <h1 id="text-3">
+              Computer <span class="hero-text-span">Scientist</span>
+            </h1>
             <p class="bio">
               Aadyant is an engineering undergraduate with major in Computer
               Science and a minor in Machine Learning. He loves problem solving
@@ -120,9 +123,16 @@
       <div class="container grid grid--2-cols grid--center">
         <div class="personal-info">
           <h4><span class="footer-logo-span">AADYANT</span> SRIVASTAVA</h4>
+
           <p class="footer-text">
-            Original Design. Created from scratch. <br />
-            <br />
+            Original Design.
+            <span class="line-break">Created from scratch.</span>
+          </p>
+
+          <br />
+          <br />
+
+          <p class="footer-text">
             Copyright © 2022 by
             <a
               class="footer-links"
@@ -131,17 +141,20 @@
             >
               Aadyant.
             </a>
-            <br /><br />
-            All rights reserved.
           </p>
+
+          <br />
+          <br />
+          <p class="footer-text">All rights reserved.</p>
         </div>
         <div class="contact-info">
-          <h4>CONTACT</h4>
+          <h4 class="responsive--contact">CONTACT</h4>
           <div class="footer-flex">
             <ion-icon class="footer-icon" name="mail"></ion-icon>
             <a href="mailto:aadyant2019@gmail.com" class="footer-links">
               aadyant2019@gmail.com</a
             >
+            <br />
           </div>
           <div class="footer-flex">
             <ion-icon class="footer-icon" name="logo-twitter"></ion-icon>
