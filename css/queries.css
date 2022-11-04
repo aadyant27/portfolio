@@ -39,9 +39,6 @@ Here, 1rem = 1em = 16px [constant]
 }
 
 @media (max-width: 615px) {
-  body {
-    width: 100vw;
-  }
   h1 {
     font-size: 6.4rem;
     line-height: 1.2;
@@ -53,7 +50,7 @@ Here, 1rem = 1em = 16px [constant]
   /* 
   HERO SECTION
   */
-  .hero {
+  /* .hero {
     grid-template-columns: 1fr;
   }
   .hero-img {
@@ -61,9 +58,8 @@ Here, 1rem = 1em = 16px [constant]
   }
   .hero-text-box {
     text-align: center;
-    /* padding: 0 2.4rem 0 3.2rem; */
-  }
-  .hero-img-box::before {
+  } */
+  /* .hero-img-box::before {
     top: 18%;
     width: 40%;
     padding-bottom: 40%;
@@ -72,14 +68,10 @@ Here, 1rem = 1em = 16px [constant]
     top: 28%;
     width: 30%;
     padding-bottom: 30%;
-  }
+  } */
   .hero-text-span {
     font-size: 6.6rem;
     padding-left: 1px;
-  }
-  .bio {
-    font-size: 2.4rem;
-    /* padding: 0 1.6rem 0 1.6rem; */
   }
 
   /* 
