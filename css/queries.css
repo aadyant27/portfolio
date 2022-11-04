@@ -39,9 +39,6 @@ Here, 1rem = 1em = 16px [constant]
 }
 
 @media (max-width: 615px) {
-  body {
-    overflow: hidden;
-  }
   h1 {
     font-size: 6.4rem;
     line-height: 1.2;
