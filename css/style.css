@@ -3,7 +3,7 @@ font-family: 'Lora', serif;
 font-family: 'Poppins', sans-serif;
 
 */
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@400;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -50,7 +50,7 @@ h1 {
 
 h2 {
   font-size: 4.4rem;
-  padding-top: 1.4rem;
+  padding-top: 1.8rem;
   letter-spacing: 1px;
 }
 h3 {
@@ -259,12 +259,14 @@ h4 {
 }
 .subheading {
   border-bottom: 2px solid #11998e;
-  padding-bottom: 2px;
+  padding-bottom: 4px;
+  display: inline-block;
 }
 .subheading-icon {
   font-size: 3.5rem;
   color: #38ef7d;
   padding-right: 10rem;
+  margin-bottom: 3px;
 }
 
 .skill-tags {
