@@ -50,6 +50,10 @@ Here, 1rem = 1em = 16px [constant]
     gap: 3.6rem;
   }
 
+  .logo {
+    height: 5rem;
+  }
+
   /* 
   HERO SECTION
   */
