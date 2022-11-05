@@ -46,12 +46,17 @@ Here, 1rem = 1em = 16px [constant]
     font-weight: 700;
     /* text-align: center; */
   }
+  .header {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
   .main-nav-list {
     gap: 3.6rem;
   }
 
   .logo {
     height: 5rem;
+    margin-right: 2px;
   }
 
   /* 
